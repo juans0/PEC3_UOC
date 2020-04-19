@@ -1,0 +1,16 @@
+body {
+    background: #6dffa3;
+    font-family: Roboto;
+    max-width: 940px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+figure {
+    float: left;
+}

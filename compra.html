@@ -15,13 +15,106 @@
                 <ul>
                     <li><a href="index.html" id="inicio" title="Página de inicio">INICIO</a></li>
                     <li><a href="productos.html" id="productos" title="Productos que ofrecemos">PRODUCTOS</a></li>
-                    <li><a href="" id="actual" title="Página de compra">COMPRA</a></li>
+                    <li id="actual"><a href="" id="compra" title="Página de compra">COMPRA</a></li>
                 </ul>        
             </nav>
         </header>
-            Realiza tu pedido
-            Rellena el siguiente formulario para realizar tu pedido
+        <main>
+            <h1>Realiza tu pedido</h1>
+            <p>Rellena el siguiente formulario para realizar tu pedido</p>
+            
+            <form id="formulario">
+                <fieldset>
+                    <legend>Datos personales</legend>
 
+                    <ul>
+                        <li>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" autofocus name="nombre" id="nombre" value="" required/>
+                        </li>
+                        <li>
+                            <label for="apellidos">Apellidos:</label>
+                            <input type="text" name="apellidos" id="apellidos" value="" required/>
+                        </li>
+                        <li>
+                            <label for="dni">DNI:</label>
+                            <input type="text" placeholder="12345678-A" name="dni" id="dni" value="" required/>
+                        </li>
+                        <li>
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" placeholder="micorreoelectronico@mail.com" name="email" id="email" value="" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required/>
+                        </li>
+                        <li>
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" name="telefono" id="telefono" value="" pattern="[0-9]{9}" required/>
+                        </li>
+                        <li>
+                            <label for="fechaPedido">Fecha de pedido:</label>
+                            <input type="date" name="fechaPedido" id="fechaPedido" value="" required/>
+                        </li>
+                    </ul>
+
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Dirección</legend>
+                    <ul>
+                        <li>
+                            <label for="calle">Calle y número:</label>
+                            <input type="text" name="calle" id="calle" value="" required/>
+                        </li>
+                        <li>
+                            <label for="ciudad">Ciudad:</label>
+                            <input type="text" name="ciudad" id="ciudad" value="" required/>
+                        </li>
+                        <li>
+                            <label for="cp">Código Postal:</label>
+                            <input type="text" name="cp" id="cp" value="" required/>
+                        </li>
+                        <li>
+                            <label for="provincia">Provincia:</label>
+                            <input type="text" name="provincia" id="provincia" value="" required/>
+                        </li>
+                        <li>
+                            <label for="pais">País:</label>
+                            <input type="text" name="pais" id="pais" value="" required/>
+                        </li>
+                    </ul> 
+                </fieldset>
+
+                <fieldset>
+                    <legend>Datos de pago y entrega</legend>
+                    <fieldset>
+                        <legend>Método de pago:</legend>
+                        <p>
+                            <input type="radio" name="pago" id="transfer"/>
+                            <label for="transfer">Transferencia <img src="img/transfer.png" width="20" height="20"></label>
+
+                            <input type="radio" name="pago" id="tarjeta"/>
+                            <label for="tarjeta">Tarjeta de crédito <img src="img/tarjeta.png" width="20" height="20"></label>
+
+                            <input type="radio" name="pago" id="paypal"/>
+                            <label for="paypal">Paypal <img src="img/paypal.png" width="50" height="20"></label>
+                        </p>
+                    </fieldset>
+                    <ul>
+                        <li>
+                            
+                            
+                        </li>
+                        <li></li>
+                        <li></li>                        
+                    </ul> 
+                </fieldset>
+                <ul>
+                    <li>
+                        <input type="submit" value="submit" />
+                        <input type="reset" value="reset" />
+                     </li>
+                </ul>
+
+            </form>
+        </main>
         <footer>
             <p>
                 PEC3 Lenguajes y estándares web, 2020. <span class="autor">Juan Salinas Gómez</span>

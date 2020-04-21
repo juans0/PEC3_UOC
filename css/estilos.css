@@ -40,21 +40,23 @@ a {
     padding: 15px;
 }
 
+#actual > a, nav #actual > a:hover {
+    background-color: #fff;
+    color: #00da00;
+    border-bottom: 5px solid #00da00;
+    padding-bottom: 24px;
+}
+
 nav li > a:hover {
     background-color: #006800;
     color: #fff;
     padding: 25px 15px;
 }
 
-#actual {
-    color: #00d900;
-    border-bottom: 5px solid #00d900;
-    padding-bottom: 24px;
-}
-
 main {
     max-width: 940px;
     margin: 0 auto;
+    height: auto;
 }
 
 footer {
@@ -63,7 +65,7 @@ footer {
     text-align: center;
     height: 50px;
     clear: left;
-    position: absolute;
+    /* position: absolute; */
     bottom: 0em;
     right: 0em;
     left: 0em;
@@ -175,4 +177,46 @@ tfoot td {
 
 .fin {
     border-bottom: 0px;
+}
+
+/* COMPRA */
+#formulario li {
+    list-style-type: none;
+    padding-bottom:5px;
+}
+
+#formulario ul li label {
+    width: 150px;
+    float: left;
+    text-align: left;
+}
+
+legend {
+    font-weight: bold;
+}
+
+#dia {
+    float: left;
+    margin: 10px;
+}
+
+#hora {
+    float: left;
+    margin: 10px;
+}
+
+#dia select {
+    margin: 10px;
+    padding: 3px;
+    border-radius: 0.2em;
+}
+
+#hora select {
+    margin: 10px;
+    padding: 3px;
+    border-radius: 0.2em;
+}
+
+.boton {
+    margin: 1em 0;
 }

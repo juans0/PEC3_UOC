@@ -86,30 +86,58 @@
                     <legend>Datos de pago y entrega</legend>
                     <fieldset>
                         <legend>Método de pago:</legend>
-                        <p>
-                            <input type="radio" name="pago" id="transfer"/>
-                            <label for="transfer">Transferencia <img src="img/transfer.png" width="20" height="20"></label>
+                            <input type="radio" name="pago" id="transfer" checked=""/>
+                            <label for="transfer">Transferencia <img src="img/transfer.png" alt="Imagen transferencia bancaria" title="Transeferncia bancaria" width="20" height="20"></label>
 
                             <input type="radio" name="pago" id="tarjeta"/>
-                            <label for="tarjeta">Tarjeta de crédito <img src="img/tarjeta.png" width="20" height="20"></label>
+                            <label for="tarjeta">Tarjeta de crédito <img src="img/tarjeta.png" alt="Imagen tarjeta de crédito" title="Tarjeta crédito" width="20" height="20"></label>
 
                             <input type="radio" name="pago" id="paypal"/>
-                            <label for="paypal">Paypal <img src="img/paypal.png" width="50" height="20"></label>
-                        </p>
+                            <label for="paypal">Paypal <img src="img/paypal.png" alt="Imagen Paypal" title="Paypal" width="50" height="20"></label>
                     </fieldset>
-                    <ul>
-                        <li>
-                            
-                            
-                        </li>
-                        <li></li>
-                        <li></li>                        
-                    </ul> 
+                    
+                    <fieldset>
+                        <legend>Fecha de entrega</legend>
+
+                        <p id="dia">Día de entrega
+                        <select>                            
+                            <optgroup label="Laborable">
+                                <option>Lunes</option>
+                                <option>Martes</option>
+                                <option>Miércoles</option>
+                                <option>Jueves</option>
+                                <option>Viernes</option>
+                            </optgroup>
+                            <optgroup label="Fin de semana">
+                                <option>Sábado</option>
+                                <option>Domingo</option>                
+                            </optgroup>
+                        </select>
+                        </p>
+
+                        <p id="hora">Hora de entrega
+                        <select>                            
+                            <optgroup label="Mañana">
+                                <option>9-12</option>
+                                <option>12-14</option>                            
+                            </optgroup>
+                            <optgroup label="Tarde">
+                                <option>16-18</option>
+                                <option>18-20</option>                
+                            </optgroup>
+                        </select>
+                         </p>
+                    </fieldset>
+
                 </fieldset>
+                <p>
+                    <input type="checkbox" name="politica" id="politica" required/>
+                    <label for="politica">Aceptar la política de privacidad y las condiciones de uso</label>
+                </p>
                 <ul>
                     <li>
-                        <input type="submit" value="submit" />
-                        <input type="reset" value="reset" />
+                        <input class="boton" type="submit" value="Enviar" />
+                        <input class="boton" type="reset" value="Borrar" />
                      </li>
                 </ul>
 

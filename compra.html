@@ -24,7 +24,7 @@
             <p>Rellena el siguiente formulario para realizar tu pedido</p>
             
             <form id="formulario">
-                <fieldset>
+                <fieldset class="datos">
                     <legend>Datos personales</legend>
 
                     <ul>
@@ -56,7 +56,7 @@
 
                 </fieldset>
                 
-                <fieldset>
+                <fieldset class="direccion">
                     <legend>Dirección</legend>
                     <ul>
                         <li>
@@ -82,9 +82,9 @@
                     </ul> 
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="datosPago">
                     <legend>Datos de pago y entrega</legend>
-                    <fieldset>
+                    <fieldset class="metodo">
                         <legend>Método de pago:</legend>
                             <input type="radio" name="pago" id="transfer" checked=""/>
                             <label for="transfer">Transferencia <img src="img/transfer.png" alt="Imagen transferencia bancaria" title="Transeferncia bancaria" width="20" height="20"></label>
@@ -96,8 +96,8 @@
                             <label for="paypal">Paypal <img src="img/paypal.png" alt="Imagen Paypal" title="Paypal" width="50" height="20"></label>
                     </fieldset>
                     
-                    <fieldset>
-                        <legend>Fecha de entrega</legend>
+                    <fieldset class="fecha">
+                        <legend>Fecha de entrega:</legend>
 
                         <p id="dia">Día de entrega
                         <select>                            

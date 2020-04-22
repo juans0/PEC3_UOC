@@ -65,7 +65,7 @@ footer {
     text-align: center;
     height: 50px;
     clear: left;
-    /* position: absolute; */
+    position: absolute;
     bottom: 0em;
     right: 0em;
     left: 0em;
@@ -180,41 +180,103 @@ tfoot td {
 }
 
 /* COMPRA */
-#formulario li {
-    list-style-type: none;
-    padding-bottom:5px;
+fieldset {
+    border: none;
+    /* border-top: 2px groove #00da00; */
 }
 
-#formulario ul li label {
+.datos {
+    float: left;
+    margin: 30px 20px;
+}
+
+.direccion {
+    float: left;
+    margin: 30px 20px;
+}
+
+.datosPago {
+    clear: left;
+    margin: auto 100px auto 20px;
+}
+
+#formulario ul {
+    padding-left: 20px;
+}
+
+#formulario li {
+    list-style-type: none;
+    padding-bottom: 5px;
+}
+
+.datos ul li label {
     width: 150px;
     float: left;
-    text-align: left;
+}
+
+.direccion ul li label {
+    width: 120px;
+    float: left;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+    width: 200px;
+    padding: 2px;
+    border-radius: 0.2em;
+}
+
+input[type="date"] {
+    width: 200px;
+    border-radius: 0.2em;
+    padding-right: 2px;
 }
 
 legend {
     font-weight: bold;
+    color: #006c00;
+    border-bottom: 3px solid #00da00;
+    width: 100%;
+    padding-bottom: 5px;
 }
 
 #dia {
     float: left;
-    margin: 10px;
+    margin: 0 20px;
 }
 
 #hora {
     float: left;
-    margin: 10px;
+    margin: 0 20px;
 }
 
 #dia select {
-    margin: 10px;
+    margin: 5px 10px;
     padding: 3px;
     border-radius: 0.2em;
 }
 
 #hora select {
-    margin: 10px;
+    margin: 5px 10px;
     padding: 3px;
     border-radius: 0.2em;
+}
+
+.metodo legend, .fecha legend {
+    border: none;
+    font-style: italic;
+}
+
+.metodo, .fecha {
+    margin-top: 16px;
+    padding-left: 20px;
+}
+
+input[type="radio"] {
+    margin-left: 20px;
+}
+
+.metodo label > img {
+    margin: 0 0 -3px 2px;
 }
 
 .boton {

@@ -3,6 +3,7 @@
 body {
     background: #6dffa3;
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
     margin: 0;
     padding: 0;
 }
@@ -21,17 +22,11 @@ nav {
     align-items: center;
 }
 
-/* nav > img, nav > ul {
-    float: left; 
-} */
-
 nav li {
     list-style: none;
     display: inline;
-    
     font-size: 1.2em;
     font-weight: bold;
-    
 }
 
 a {
@@ -55,7 +50,7 @@ nav li > a:hover {
 
 main {
     max-width: 940px;
-    margin: 0 auto;
+    margin: 50px auto;
     height: auto;
 }
 
@@ -63,28 +58,36 @@ footer {
     background-color: #006800;
     color: #fff;
     text-align: center;
-    height: 50px;
+    height: 70px;
     clear: left;
     position: absolute;
     bottom: 0em;
     right: 0em;
     left: 0em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 }
 
  footer > p {
     max-width: 940px;
-    margin: 0 auto;
-    display: flex;
+    margin: auto;
+    /* display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center; */
 } 
 
 .autor {
     font-weight: bold;
+    font-style: normal;
+    margin-right: 50px;
 }
 
 footer a {
     color: #fff;
+    padding-left: 0;
 }
 
 
@@ -92,7 +95,7 @@ footer a {
 figure {
     float: left;
     max-width: 30%;
-    margin: 50px 15px 5px -10px;
+    margin: 0 15px 5px -10px;
 }
 
 h1, h2 {
@@ -117,7 +120,11 @@ article {
     float: left;
     max-width: 62%;
     margin-left: 65px;
-    margin-top: 20px;
+    margin-top: -30px;
+}
+
+span {
+    font-style: italic;
 }
 
 /* PRODUCTOS */
@@ -182,22 +189,21 @@ tfoot td {
 /* COMPRA */
 fieldset {
     border: none;
-    /* border-top: 2px groove #00da00; */
 }
 
 .datos {
     float: left;
-    margin: 30px 20px;
+    margin: 20px 20px;
 }
 
 .direccion {
     float: left;
-    margin: 30px 20px;
+    margin: 20px 20px;
 }
 
 .datosPago {
     clear: left;
-    margin: auto 100px auto 20px;
+    margin: auto 100px 20px 20px;
 }
 
 #formulario ul {
@@ -250,13 +256,13 @@ legend {
 }
 
 #dia select {
-    margin: 5px 10px;
+    margin: 0 10px;
     padding: 3px;
     border-radius: 0.2em;
 }
 
 #hora select {
-    margin: 5px 10px;
+    margin: 0 10px;
     padding: 3px;
     border-radius: 0.2em;
 }
@@ -275,10 +281,71 @@ input[type="radio"] {
     margin-left: 20px;
 }
 
+.metodo label {
+    margin-right: 5px;
+}
+
 .metodo label > img {
     margin: 0 0 -3px 2px;
 }
 
 .boton {
-    margin: 1em 0;
+    margin: 20px 10px;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: #006800;
+    border: 2px solid #006800;
+    font-weight: bold;
+    font-style: italic;
+    box-shadow:  rgba(0,0,0,0.7) 0px 5px 15px; /* offset-x | offset-y | blur-radius | color */
 }
+
+.boton:hover {
+    color: #fff;
+    background-color: #008900;
+    box-shadow: inset rgba(0,0,0,0.7) 0px 5px 15px; /* offset-x | offset-y | blur-radius | color */
+}
+
+/* input[type="checkbox"] {
+    margin-left: 30px;
+} */
+
+#check {
+    border-top: 1px #006800 dotted;
+    padding-top: 15px;
+    margin: 0 100px 0 30px;
+}
+
+/* 
+input[name="politica"] {
+    display: none;
+}
+
+input[type="checkbox"] + label:before {
+	content: ""; 
+	width:12px; 
+    height:12px; 
+    background-color: rgba(255, 255, 255, 0.651);
+	border: 1px solid #000;
+	text-align: center;  
+	line-height: 14px;
+	margin: 0 10px 0 30px;
+    padding: 1px; 
+    float: left;
+	
+}
+
+input[type="checkbox"]:checked + label:before { 
+    content: "\02713"; 
+    color: #008900;
+    font-weight: bold;
+
+}
+
+input[type="checkbox"]:invalid + label:before { 
+    content: ""; 
+    border: 2px solid red;
+    font-weight: bold;
+
+} */

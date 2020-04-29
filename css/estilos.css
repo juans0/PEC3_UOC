@@ -51,19 +51,18 @@ nav li > a:hover {
 main {
     max-width: 940px;
     margin: 50px auto;
-    height: auto;
+    height: 690px;
 }
 
 footer {
     background-color: #006800;
     color: #fff;
-    text-align: center;
     height: 70px;
     clear: left;
-    position: absolute;
+    /* position: absolute; 
     bottom: 0em;
     right: 0em;
-    left: 0em;
+    left: 0em;*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -120,6 +119,7 @@ article {
     max-width: 62%;
     margin-left: 65px;
     margin-top: -30px;
+    margin-bottom: 20px;
 }
 
 span {
